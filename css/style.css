@@ -719,3 +719,29 @@ html, body {
   color: #fff !important;
   text-decoration: none !important;
 }
+
+/* --- FIX DEFINITIVO: WhatsApp button text color and underline (PC & Mobile) --- */
+/* Elimina subrayado y color azul en todos los navegadores y estados */
+footer a[aria-label*="WhatsApp"],
+footer a[aria-label*="WhatsApp"]:visited,
+footer a[aria-label*="WhatsApp"]:active,
+footer a[aria-label*="WhatsApp"]:focus {
+  text-decoration: none !important;
+  color: #080808 !important;
+  outline: none;
+  box-shadow: none;
+}
+
+footer a[aria-label*="WhatsApp"] .wpp-btn,
+footer a[aria-label*="WhatsApp"] .wpp-text {
+  text-decoration: none !important;
+  color: #080808 !important;
+  outline: none;
+  box-shadow: none;
+}
+
+footer a[aria-label*="WhatsApp"]:hover .wpp-btn,
+footer a[aria-label*="WhatsApp"]:hover .wpp-text {
+  color: #fff !important;
+  text-decoration: none !important;
+}
