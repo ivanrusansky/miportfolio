@@ -695,3 +695,27 @@ html, body {
   outline: none;
   box-shadow: none;
 }
+
+/* --- FIX: WhatsApp button text color and underline (PC & Mobile) --- */
+.wpp-btn, .wpp-btn:visited, .wpp-btn:active, .wpp-btn:focus {
+  text-decoration: none !important;
+  color: #080808 !important;
+  outline: none;
+  box-shadow: none;
+}
+.wpp-btn .wpp-text, .wpp-btn .wpp-text:visited, .wpp-btn .wpp-text:active, .wpp-btn .wpp-text:focus {
+  text-decoration: none !important;
+  color: #080808 !important;
+  outline: none;
+  box-shadow: none;
+}
+.wpp-btn a, .wpp-btn a:visited, .wpp-btn a:active, .wpp-btn a:focus {
+  text-decoration: none !important;
+  color: #080808 !important;
+  outline: none;
+  box-shadow: none;
+}
+.wpp-btn:hover, .wpp-btn:hover .wpp-text, .wpp-btn:hover a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
