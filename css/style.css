@@ -660,3 +660,24 @@ footer img:hover {
     transform: scale(1.03);
   }
 }
+
+/* --- SOLUCIÓN OVERFLOW Y SUBRAYADO --- */
+html, body {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden !important;
+}
+
+.wpp-btn, .github-link {
+  text-decoration: none !important;
+}
+
+.wpp-btn:visited, .wpp-btn:active, .wpp-btn:focus {
+  text-decoration: none !important;
+  outline: none;
+  box-shadow: none;
+}
+
+.wpp-btn .wpp-text {
+  text-decoration: none !important;
+}
