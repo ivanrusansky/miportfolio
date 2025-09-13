@@ -681,3 +681,17 @@ html, body {
 .wpp-btn .wpp-text {
   text-decoration: none !important;
 }
+
+.wpp-btn, .wpp-btn:visited, .wpp-btn:active, .wpp-btn:focus, .wpp-btn .wpp-text, .wpp-btn .wpp-text:visited, .wpp-btn .wpp-text:active, .wpp-btn .wpp-text:focus {
+  text-decoration: none !important;
+  color: inherit;
+  outline: none;
+  box-shadow: none;
+}
+
+.wpp-btn a, .wpp-btn a:visited, .wpp-btn a:active, .wpp-btn a:focus {
+  text-decoration: none !important;
+  color: inherit;
+  outline: none;
+  box-shadow: none;
+}
