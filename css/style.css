@@ -1,3 +1,91 @@
+/* Botón super estilado de proyectos en curso */
+.btn-proyectos-curso {
+  position: relative;
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: linear-gradient(90deg, #36363a8f 0%, #90997ecb 100%);
+  backdrop-filter: blur(8px) saturate(160%);
+  -webkit-backdrop-filter: blur(8px) saturate(160%);
+  background-clip: padding-box;
+  border: 1.5px solid rgba(255,255,255,0.18);
+  box-shadow: 0 6px 32px 0 rgba(168, 142, 154, 0.18), 0 1.5px 8px 0 rgba(81, 95, 83, 0.12), 0 1px 16px 0 rgba(255,255,255,0.08) inset;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 6px 32px 0 rgba(182, 153, 166, 0.18), 0 1.5px 8px 0 rgba(137, 144, 161, 0.12);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.18s cubic-bezier(.4,2,.3,1), box-shadow 0.18s;
+  z-index: 1;
+  outline: none;
+  margin-bottom: 30px !important;
+}
+
+/* Variables personalizables para el botón de proyectos en curso */
+:root {
+  --btn-proyectos-main1: #aa977b;
+  --btn-proyectos-main2: #939e89;
+  --btn-proyectos-shadow1: rgba(207, 191, 198, 0.18);
+  --btn-proyectos-shadow2: rgba(175, 127, 118, 0.12);
+  --btn-proyectos-shadow1-hover: rgba(231, 183, 205, 0.22);
+  --btn-proyectos-shadow2-hover: rgba(110, 87, 82, 0.18);
+  --btn-proyectos-shadow1-active: rgba(85, 61, 72, 0.12);
+}
+.btn-proyectos-curso::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -60%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.18) 50%, rgba(255,255,255,0.04) 100%);
+  transform: skewX(-20deg);
+  z-index: 2;
+  pointer-events: none;
+  animation: shine-move 3.2s cubic-bezier(.4,1.6,.3,1) infinite;
+@keyframes shine-move {
+  0% {
+    left: -60%;
+    opacity: 0.7;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    left: 120%;
+    opacity: 0.7;
+  }
+}
+}
+
+.btn-proyectos-curso:hover {
+  transform: translateY(-1.5px) scale(1.025) rotate(-0.2deg);
+  box-shadow: 0 12px 48px 0 rgba(139, 175, 139, 0.13), 0 4px 18px 0 rgba(127, 133, 168, 0.10), 0 0 32px 0 rgba(255,255,255,0.10) inset;
+  transition: transform 0.55s cubic-bezier(.4,1.6,.3,1), box-shadow 0.7s cubic-bezier(.4,1.6,.3,1);
+}
+
+.btn-proyectos-curso:hover::before {
+  left: 120%;
+  box-shadow: 0 10px 40px 0 var(--btn-proyectos-shadow1-hover), 0 2px 12px 0 var(--btn-proyectos-shadow2-hover);
+  transition: left 1.2s cubic-bezier(.4,1.6,.3,1), box-shadow 0.7s cubic-bezier(.4,1.6,.3,1);
+}
+
+.btn-proyectos-curso:active {
+  box-shadow: 0 2px 8px 0 var(--btn-proyectos-shadow1-active);
+  box-shadow: 0 2px 8px 0 rgba(65, 71, 83, 0.12);
+}
+
+@media (max-width: 768px) {
+  .btn-proyectos-curso {
+    font-size: 0.95rem;
+    padding: 10px 16px;
+  }
+}
 /* Reset and Base Styles */
 * {
   margin: 0;
@@ -6,10 +94,11 @@
 }
 
 body {
-  font-family: "Outfit", sans-serif;
+  font-family: "Poppins", "Montserrat", "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   overflow-x: hidden !important;
+  color: #181818;
 
   background: linear-gradient(
       135deg,
@@ -142,8 +231,13 @@ nav .navbar-nav .nav-link:hover {
 }
 
 .custom-btn:hover {
-  background-color: #ffffff;
-  transform: translateY(-2px);
+  background: linear-gradient(90deg, #ededed 0%, #e0e0e0 100%);
+  color: #181818;
+  box-shadow: 0 4px 16px 0 rgba(30,30,30,0.10), 0 1.5px 8px 0 rgba(80,80,80,0.08);
+  filter: brightness(1.04) saturate(1.05);
+  border: 1.5px solid #e0e0e0;
+  transform: translateY(-2.5px) scale(1.03);
+  transition: background 0.35s cubic-bezier(.4,1.6,.3,1), box-shadow 0.35s, filter 0.35s, transform 0.25s, color 0.25s, border 0.25s;
 }
 
 .custom-btn:active {
@@ -199,6 +293,24 @@ nav .navbar-nav .nav-link:hover {
   height: 250px;
   object-fit: cover;
   border-bottom: 1px solid #ecf0f1;
+  image-rendering: auto;
+  background: #f3f3f3;
+}
+
+@media (max-width: 768px) {
+  .card img {
+    width: 100%;
+    height: 140px;
+    max-height: 180px;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    background: #f3f3f3;
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    image-rendering: auto;
+  }
 }
 
 .card-body {
@@ -255,30 +367,37 @@ nav .navbar-nav .nav-link:hover {
 
 #acerca-de-mi p {
   font-size: 1.1rem;
-  color: #4e4e4e;
+  color: #181818;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0 auto 1.5em auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .yo {
+  color: #181818;
   text-align: justify;
   margin-bottom: 5%;
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 .recursos {
+  color: #181818;
   margin-top: 5% !important;
-  padding: 5px;
+  padding: 5px 10px;
   text-align: justify;
   margin-bottom: 10%;
 }
 
 .herramientas {
+  color: #181818;
   margin-top: 10% !important;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .herramienta-item {
-  color: #313131;
+  color: #181818;
   font-weight: 600;
   padding: 0;
   margin: 1px 0;
@@ -286,6 +405,7 @@ nav .navbar-nav .nav-link:hover {
 }
 
 .negrita {
+  color: #181818;
   font-weight: 700;
 }
 
@@ -338,14 +458,18 @@ footer .container {
   width: 100%;
   max-width: 1200px;
   margin-bottom: 5% !important;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 footer p {
-  font-size: 1.1rem;
-  color: #303030;
-  margin: 0;
-  margin-bottom: 5% !important;
-  margin-top: 5% !important;
+  font-size: 0.98rem;
+  color: #181818;
+  margin: 24px 0 24px 0;
+  margin-bottom: 6% !important;
+  margin-top: 6% !important;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
 footer img {
@@ -379,10 +503,14 @@ footer img:hover {
 @media (max-width: 768px) {
   .yo {
     font-size: 15px !important;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .recursos {
     font-size: 15px !important;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .herramienta-item {
@@ -390,7 +518,14 @@ footer img:hover {
   }
 
   .contacto-text {
-    font-size: 20px !important;
+  color: #181818;
+    font-size: 16px !important;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 18px;
+    margin-bottom: 18px;
   }
 
   footer {
@@ -399,11 +534,15 @@ footer img:hover {
 
   footer .container {
     gap: 1rem;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   footer p {
     font-size: 1rem;
     margin-bottom: 5% !important;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   footer img {
