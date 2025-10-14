@@ -418,17 +418,16 @@ nav .navbar-nav .nav-link:hover {
 
 @media (max-width: 768px) {
   .card img {
-    width: 100%;
-    height: 140px;
-    max-height: 180px;
-    object-fit: cover;
-    aspect-ratio: 16/9;
-    background: #f3f3f3;
-    display: block;
-    margin: 0;
-    border-radius: 0;
-    box-shadow: none;
-    image-rendering: auto;
+     width: 100%;
+     height: 200px;
+     object-fit: cover;
+     object-position: center center;
+     background: #f3f3f3;
+     display: block;
+     margin: 0;
+     border-radius: 0;
+     box-shadow: none;
+     image-rendering: auto;
   }
 }
 
