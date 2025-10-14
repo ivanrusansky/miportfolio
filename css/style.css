@@ -418,16 +418,16 @@ nav .navbar-nav .nav-link:hover {
 
 @media (max-width: 768px) {
   .card img {
-     width: 100%;
-     height: 200px;
-     object-fit: cover;
-     object-position: center center;
-     background: #f3f3f3;
-     display: block;
-     margin: 0;
-     border-radius: 0;
-     box-shadow: none;
-     image-rendering: auto;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center center;
+    background: #f3f3f3;
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    image-rendering: auto;
   }
 }
 
@@ -661,17 +661,21 @@ footer img:hover {
 }
 
 /* --- SOLUCIÓN OVERFLOW Y SUBRAYADO --- */
-html, body {
+html,
+body {
   width: 100vw;
   max-width: 100vw;
   overflow-x: hidden !important;
 }
 
-.wpp-btn, .github-link {
+.wpp-btn,
+.github-link {
   text-decoration: none !important;
 }
 
-.wpp-btn:visited, .wpp-btn:active, .wpp-btn:focus {
+.wpp-btn:visited,
+.wpp-btn:active,
+.wpp-btn:focus {
   text-decoration: none !important;
   outline: none;
   box-shadow: none;
@@ -681,14 +685,24 @@ html, body {
   text-decoration: none !important;
 }
 
-.wpp-btn, .wpp-btn:visited, .wpp-btn:active, .wpp-btn:focus, .wpp-btn .wpp-text, .wpp-btn .wpp-text:visited, .wpp-btn .wpp-text:active, .wpp-btn .wpp-text:focus {
+.wpp-btn,
+.wpp-btn:visited,
+.wpp-btn:active,
+.wpp-btn:focus,
+.wpp-btn .wpp-text,
+.wpp-btn .wpp-text:visited,
+.wpp-btn .wpp-text:active,
+.wpp-btn .wpp-text:focus {
   text-decoration: none !important;
   color: inherit;
   outline: none;
   box-shadow: none;
 }
 
-.wpp-btn a, .wpp-btn a:visited, .wpp-btn a:active, .wpp-btn a:focus {
+.wpp-btn a,
+.wpp-btn a:visited,
+.wpp-btn a:active,
+.wpp-btn a:focus {
   text-decoration: none !important;
   color: inherit;
   outline: none;
@@ -696,25 +710,39 @@ html, body {
 }
 
 /* --- FIX: WhatsApp button text color and underline (PC & Mobile) --- */
-.wpp-btn, .wpp-btn:visited, .wpp-btn:active, .wpp-btn:focus {
+.wpp-btn,
+.wpp-btn:visited,
+.wpp-btn:active,
+.wpp-btn:focus {
   text-decoration: none !important;
   color: #080808 !important;
   outline: none;
   box-shadow: none;
 }
-.wpp-btn .wpp-text, .wpp-btn .wpp-text:visited, .wpp-btn .wpp-text:active, .wpp-btn .wpp-text:focus {
+
+.wpp-btn .wpp-text,
+.wpp-btn .wpp-text:visited,
+.wpp-btn .wpp-text:active,
+.wpp-btn .wpp-text:focus {
   text-decoration: none !important;
   color: #080808 !important;
   outline: none;
   box-shadow: none;
 }
-.wpp-btn a, .wpp-btn a:visited, .wpp-btn a:active, .wpp-btn a:focus {
+
+.wpp-btn a,
+.wpp-btn a:visited,
+.wpp-btn a:active,
+.wpp-btn a:focus {
   text-decoration: none !important;
   color: #080808 !important;
   outline: none;
   box-shadow: none;
 }
-.wpp-btn:hover, .wpp-btn:hover .wpp-text, .wpp-btn:hover a {
+
+.wpp-btn:hover,
+.wpp-btn:hover .wpp-text,
+.wpp-btn:hover a {
   color: #fff !important;
   text-decoration: none !important;
 }
@@ -744,6 +772,6 @@ footer a[aria-label*="WhatsApp"]:hover .wpp-text {
   text-decoration: none !important;
 }
 
-.wpp-btn{
+.wpp-btn {
   text-decoration: none !important;
 }
