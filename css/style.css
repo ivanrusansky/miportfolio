@@ -384,10 +384,20 @@ nav .navbar-nav .nav-link:hover {
     padding-top: 60px;
   }
 
+  .projects .row {
+    justify-content: center;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
   .projects .col-12 {
     flex: 0 0 100%;
     max-width: 80%;
     padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -420,7 +430,7 @@ nav .navbar-nav .nav-link:hover {
     object-position: center center;
     background: #f3f3f3;
     display: block;
-    margin: 0;
+    margin: 0 auto;
     border-radius: 0;
     box-shadow: none;
     image-rendering: auto;
