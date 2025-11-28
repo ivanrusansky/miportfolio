@@ -112,6 +112,16 @@
   z-index: 1;
   outline: none;
   margin: 20px auto 40px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.btn-proyectos-curso-fullwidth {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 :root {
