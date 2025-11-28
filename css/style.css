@@ -194,7 +194,10 @@
   }
 
   .btn-proyectos-curso {
+    align-items: center !important;
     font-size: 0.85rem;
+    margin-left: 14%;
+    margin-right: 14%;
     padding: 10px 6px;
     min-width: 240px;
     max-width: 100vw;
