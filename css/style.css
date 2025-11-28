@@ -114,6 +114,9 @@
   margin: 20px auto 40px;
   max-width: 400px;
   width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .btn-proyectos-curso-fullwidth {
@@ -192,6 +195,9 @@
   .btn-proyectos-curso {
     font-size: 0.95rem;
     padding: 10px 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 }
 
