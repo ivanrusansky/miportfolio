@@ -5,7 +5,7 @@ const projects = [
     name: 'marco ruffolo',
     img: '/img/marcoruffolocv.png',
     url: 'https://marcoruffoloportfolio.netlify.app/',
-    description: 'cv de desarrollador web',
+    description: 'cv de desarrollador web.',
   },
   {
     id: 1,
