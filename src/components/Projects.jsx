@@ -1,4 +1,12 @@
 const projects = [
+  
+  {
+    id: 0,
+    name: 'marco ruffolo',
+    img: '/img/marco ruffolo cv.png',
+    url: 'https://marcoruffoloportfolio.netlify.app/',
+    description: 'cv de desarrollador web',
+  },
   {
     id: 1,
     name: 'micaela pucheta',
@@ -15,7 +23,7 @@ const projects = [
   },
   {
     id: 3,
-    name: 'galería',
+    name: 'galería de arte',
     img: '/img/gallerycaratula2.png',
     url: 'https://gallerydotdot.netlify.app/',
     description: 'espacio de curaduría y eventos creativos.',
