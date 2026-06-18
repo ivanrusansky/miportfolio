@@ -13,7 +13,7 @@ const projects = [
     img: '/img/marcoruffolocv.png',
     url: 'https://marcoruffoloportfolio.netlify.app/',
     description: 'cv de desarrollador web.',
-    tags: ['react', 'html', 'css'],
+    tags: ['react.js', 'html', 'css'],
   },
   {
     id: 2,
