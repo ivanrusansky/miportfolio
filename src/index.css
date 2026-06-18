@@ -161,6 +161,7 @@ main {
 .project-tag--tailwind-css { color: #38bdf8; }
 .project-tag--javascript  { color: #e5c07b; }
 .project-tag--typescript  { color: #4ec9b0; }
+.project-tag--react       { color: #a78bfa; }
 .project-tag--react\.js   { color: #a78bfa; }
 .project-tag--next\.js    { color: #d8d8d8; }
 .project-tag--sass        { color: #cc6699; }
